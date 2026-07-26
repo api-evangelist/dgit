@@ -1,21 +1,53 @@
 aid: dgit
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dgit.png
 name: DGIT
-description: 'DGIT is a company surfaced as a portfolio company of sierra-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: saas. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'DGIT Systems is a Melbourne, Australia telecommunications software vendor best known for
+  Telflow, an order-management and service-orchestration (BSS/OSS) platform used by communications service
+  providers to design, quote, order and fulfil connectivity products. DGIT was surfaced as a portfolio
+  company of Sierra Ventures. As of this enrichment pass the company has no independent public web presence:
+  its product domains dgitsystems.com and telflow.com both 308-redirect to csgi.com, indicating DGIT has
+  been absorbed into CSG Systems International, and the domain listed by the Sierra Ventures portfolio
+  page (dgit.us) is an Afternic/GoDaddy for-sale parking page rather than a company site. No developer
+  portal, API documentation, OpenAPI specification, SDK or package surface could be located.'
 url: https://raw.githubusercontent.com/api-evangelist/dgit/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - sierra-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
+x-status: acquired
+x-acquired-by: CSG Systems International (csgi.com)
+x-notes: 'Verified 2026-07-20: https://dgitsystems.com/ -> 308 -> https://www.csgi.com/; https://telflow.com/
+  -> 308 -> https://www.csgi.com/; https://dgit.us/ serves a GoDaddy/Afternic domain-for-sale lander (NS
+  ns1.afternic.com) and soft-200s every path, so /.well-known/ probes are not real hits. docs./api./developer.dgitsystems.com
+  do not resolve. github.com/dgitsystems is a real, live org (15 repos, created 2017) but contains only
+  forks of third-party infrastructure tooling (lua-resty-openidc, pgjdbc-ng, vyos-build, stoplightio-elements)
+  with no first-party API specifications. No packages found on npm or PyPI for dgit/dgitsystems/telflow.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Saas
+- SaaS
+- Telecommunications
+- BSS
+- OSS
+- Order Management
+- Service Orchestration
+- Australia
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +56,13 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://dgit.us/
+  url: https://www.csgi.com/
+  name: CSG Systems International (successor to DGIT Systems)
+- type: GitHubOrganization
+  url: https://github.com/dgitsystems
+  name: DGIT Systems on GitHub
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
