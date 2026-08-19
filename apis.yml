@@ -35,7 +35,7 @@ x-notes: 'Verified 2026-07-20: https://dgitsystems.com/ -> 308 -> https://www.cs
   do not resolve. github.com/dgitsystems is a real, live org (15 repos, created 2017) but contains only
   forks of third-party infrastructure tooling (lua-resty-openidc, pgjdbc-ng, vyos-build, stoplightio-elements)
   with no first-party API specifications. No packages found on npm or PyPI for dgit/dgitsystems/telflow.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
