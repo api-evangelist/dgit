@@ -7,14 +7,18 @@ front_door_ai:
   probed_at: '2026-09-17'
   host: www.csgi.com
   final_host: www.csgi.com
-  ownership: own
-  owner: dgit
-  shares_host_with: null
+  ownership: unresolved
+  owner: null
+  shares_host_with:
+  - csg
   inherited_from: null
+  alias_of: null
   verdict: scored
-  score: 15
+  score: null
+  band: null
+  band_label: null
   host_score: 15
-  density: 5.53
+  density: null
   words: 2711
   tiers:
     agentic: 1
